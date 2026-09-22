@@ -1,13 +1,8 @@
 "use strict";
-// console.log(123);
-// const logSomething = () => {
-//   console.log("hi there");
-// };
-// logSomething();
-// class Sorter {
-//   collection: number[];
-//   constructor(collection: number[]) {
-//     this.collection = collection;
-//   }
-// }
-const sorter = new Sorter([0, -1, 5, 10]);
+Object.defineProperty(exports, "__esModule", { value: true });
+const Sorter_1 = require("./Sorter");
+const NumbersCollection_1 = require("./NumbersCollection");
+const numbersCollection = new NumbersCollection_1.NumberCollection([0, -1, 5, 10]);
+const sorter = new Sorter_1.Sorter(numbersCollection);
+sorter.sort();
+console.log(numbersCollection.data);

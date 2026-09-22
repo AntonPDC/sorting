@@ -1,17 +1,10 @@
-// console.log(123);
+import { Sorter } from "./Sorter";
+import { NumberCollection } from "./NumbersCollection";
 
-// const logSomething = () => {
-//   console.log("hi there");
-// };
+const numbersCollection = new NumberCollection([0, -1, 5, 10]);
 
-// logSomething();
+const sorter = new Sorter(numbersCollection);
 
-// class Sorter {
-//   collection: number[];
+sorter.sort();
 
-//   constructor(collection: number[]) {
-//     this.collection = collection;
-//   }
-// }
-
-const sorter = new Sorter([0, -1, 5, 10]);
+console.log(numbersCollection.data);
