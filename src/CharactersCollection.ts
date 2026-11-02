@@ -11,5 +11,11 @@ export class CharactersCollection {
     );
   }
 
-  swap(leftIndex: number, rightIndex: number): void {}
+  swap(leftIndex: number, rightIndex: number): void {
+    const characters = this.data.split("");
+    const leftHand = characters[leftIndex];
+    characters[leftIndex] = this.data[rightIndex];
+    characters[rightIndex] = leftHand;
+    this.data = characters.join("");
+  }
 }
