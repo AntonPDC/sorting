@@ -8,19 +8,21 @@ linkedList.add(500);
 linkedList.add(-13);
 linkedList.add(-3);
 linkedList.add(10);
+linkedList.sort();
 
-const numbersCollection = new NumberCollection([0, -1, 5, 10]);
+// const numbersCollection = new NumberCollection([0, -1, 5, 10]);
+// numbersCollection.sort();
+// const charactersCollection = new CharactersCollection("ASDvzxhDFhe");
+// charactersCollection.sort();
 
-const charactersCollection = new CharactersCollection("ASDvzxhDFhe");
+// const sorter = new Sorter(numbersCollection);
+// const sorter2 = new Sorter(charactersCollection);
+// const sorter3 = new Sorter(linkedList);
 
-const sorter = new Sorter(numbersCollection);
-const sorter2 = new Sorter(charactersCollection);
-const sorter3 = new Sorter(linkedList);
+// sorter.sort();
+// sorter2.sort();
+// sorter3.sort();
 
-sorter.sort();
-sorter2.sort();
-sorter3.sort();
-
-console.log(numbersCollection.data);
-console.log(charactersCollection.data);
+// console.log(numbersCollection.data);
+// console.log(charactersCollection.data);
 linkedList.print();
