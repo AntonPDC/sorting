@@ -35,5 +35,27 @@ class LinkedList {
         }
         return length;
     }
+    at(index) {
+        if (!this.head) {
+            throw new Error("Index out of bounds");
+        }
+        let counter = 0;
+        let node = this.head;
+        while (node) {
+            if (counter === index) {
+                return node;
+            }
+            counter++;
+            node = node.next;
+        }
+        throw new Error("Index out of bounds");
+    }
+    compare(leftIndex, rightIndex) {
+        if (!this.head) {
+            throw new Error("List is empty");
+        }
+        return this.at(leftIndex).data > this.at(rightIndex).data;
+    }
+    swap() { }
 }
 exports.LinkedList = LinkedList;
