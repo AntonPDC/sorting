@@ -56,6 +56,21 @@ class LinkedList {
         }
         return this.at(leftIndex).data > this.at(rightIndex).data;
     }
-    swap() { }
+    swap(leftIndex, rightIndex) {
+        const leftNode = this.at(leftIndex);
+        const rightNode = this.at(rightIndex);
+        const leftHand = leftNode.data;
+        leftNode.data = rightNode.data;
+        rightNode.data = leftHand;
+    }
+    print() {
+        if (!this.head) {
+            return;
+        }
+        const node = this.head;
+        while (node) {
+            console.log(node.data);
+        }
+    }
 }
 exports.LinkedList = LinkedList;
