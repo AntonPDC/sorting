@@ -67,9 +67,10 @@ export class LinkedList {
     if (!this.head) {
       return;
     }
-    const node = this.head;
+    let node: Node1 | null = this.head;
     while (node) {
       console.log(node.data);
+      node = node.next;
     }
   }
 }

@@ -67,9 +67,10 @@ class LinkedList {
         if (!this.head) {
             return;
         }
-        const node = this.head;
+        let node = this.head;
         while (node) {
             console.log(node.data);
+            node = node.next;
         }
     }
 }
